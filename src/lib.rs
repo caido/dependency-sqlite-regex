@@ -6,6 +6,7 @@ mod regexset;
 mod regexset_matches;
 mod split;
 mod utils;
+mod wrapper;
 
 use regexset_matches::RegexSetMatchesTable;
 use sqlite_loadable::prelude::*;

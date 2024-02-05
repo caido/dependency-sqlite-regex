@@ -1,4 +1,3 @@
-use regex::RegexSet;
 use sqlite_loadable::{
     api,
     table::{ConstraintOperator, IndexInfo, VTab, VTabArguments, VTabCursor},
@@ -9,6 +8,7 @@ use sqlite_loadable::{prelude::*, Error};
 use std::{mem, os::raw::c_int};
 
 use crate::utils::value_regexset;
+use crate::wrapper::RegexSet;
 
 static CREATE_SQL: &str = "CREATE TABLE x(key, pattern, regexset hidden, contents hidden)";
 enum Columns {

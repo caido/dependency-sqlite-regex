@@ -1,6 +1,5 @@
-use regex::RegexSet;
-
 use crate::utils::{result_regexset, value_regexset};
+use crate::wrapper::RegexSet;
 use sqlite_loadable::prelude::*;
 use sqlite_loadable::{api, Error, Result};
 

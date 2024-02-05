@@ -1,7 +1,9 @@
-use regex::{Captures, Regex, RegexSet};
+use regex::Captures;
 use sqlite_loadable::prelude::*;
 use sqlite_loadable::{api, Error, Result};
 use std::os::raw::c_void;
+
+use crate::wrapper::{Regex, RegexSet};
 
 // Raw bytes as performance. the string MUST end in the null byte '\0'
 const REGEX_POINTER_NAME: &[u8] = b"regex0\0";

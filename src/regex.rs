@@ -1,9 +1,8 @@
-use regex::Regex;
-
 use crate::utils::{
     cleanup_regex_value_cached, regex_from_value_or_cache, result_regex, value_regex,
     value_regex_captures, CaptureGroupKey,
 };
+use crate::wrapper::Regex;
 use sqlite_loadable::prelude::*;
 use sqlite_loadable::{api, Error, Result};
 

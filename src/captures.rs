@@ -1,4 +1,4 @@
-use regex::{Captures, Regex};
+use regex::Captures;
 use sqlite_loadable::{
     api,
     scalar::scalar_function_raw,
@@ -10,6 +10,7 @@ use sqlite_loadable::{prelude::*, Error};
 use std::{ffi::c_void, mem, os::raw::c_int};
 
 use crate::utils::{result_regex_captures, value_regex};
+use crate::wrapper::Regex;
 
 static CREATE_SQL: &str = "CREATE TABLE x(captures, pattern hidden, contents text hidden)";
 enum Columns {

@@ -17,6 +17,7 @@ regex = "1"
 default = ["dynamic"]
 dynamic = ["sqlite-loadable/dynamic"]
 static = ["sqlite-loadable/static"]
+ignore-invalid = []
 
 [lib]
 crate-type=["lib", "cdylib", "staticlib"]
